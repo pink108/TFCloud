@@ -8,7 +8,7 @@
 #   type        = string
 #   default     = ""
 # }
-# 
+
 # variable "vnet_subnet_id" {
 #   description = "The subnet id of the virtual network where the virtual machines will reside."
 #   type        = string
