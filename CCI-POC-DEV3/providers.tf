@@ -9,7 +9,7 @@ terraform {
     organization = "CCI-Demo"
   
   workspaces {
-      name = "dev3-deploy-v1_0"
+      name = ["nte1","nte2"]
     }
   }
 }

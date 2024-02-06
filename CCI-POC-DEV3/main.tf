@@ -1,11 +1,8 @@
 ## Creates resource group
-resource "azurerm_resource_group" "rg-cci-poc-dev3" {
-  name     = "rg-cci-poc-dev3"
-  location = "East US2"
-
-  tags = {
-    "owner"  = "Pink Rathod",
-  }
+module "resource_group" {
+  source   = "./modules/rg"
+  name     = var.resource_group_name
+  location = var.location
 }
 
 # locals {
