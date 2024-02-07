@@ -8,6 +8,16 @@ variable "location" {
   type        = string
 }
 
+variable "TF_CLI_ARGS_plan" {
+  type    = string
+  default = "-var-file=./environments/nte1/nte1.tfvars"
+}
+
+variable "TF_CLI_ARGS_apply" {
+  type    = string
+  default = "-var-file=./environments/nte1/nte1.tfvars"
+}
+
 # variable "resource_group_name" {
 #   description = "The name of the resource group in which the resources will be created."
 #   type        = string
